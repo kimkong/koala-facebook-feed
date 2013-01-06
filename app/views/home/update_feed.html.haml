@@ -1,0 +1,6 @@
+
+%p
+  There are
+  = @post_pull_id - @pre_pull_id
+  new posts.
+/ %p Last post was created, #{l(Feed.last.created_at, format: :civilian)}

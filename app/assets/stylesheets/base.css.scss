@@ -1,0 +1,53 @@
+
+$fixed-top-padding:   94px;
+$gutter-width:        20px;
+
+
+
+a {
+  -webkit-transition: color 0.5s ease-in-out;
+     -moz-transition: color 0.5s ease-in-out;
+       -o-transition: color 0.5s ease-in-out;
+          transition: color 0.5s ease-in-out;
+}
+
+
+body {
+}
+html {
+}
+
+h1, h2, h3, h4, h5 {
+}
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.5; }
+h4 { font-size: 1.25; }
+h5 { font-size: inherit; }
+
+
+
+
+
+// DESIGN FRAMEWORK
+.align-left  { text-align:left; }
+.align-right { text-align:right; }
+
+.container.body {
+  margin-top: 30px;
+  padding-bottom: 80px;
+}
+
+.gutter {
+  margin: 0 $gutter-width;
+
+  &.left { margin-right: 0;}
+  &.right { margin-left: 0;}
+}
+
+.margin-top { margin-top: 3em;}
+
+.text-center { text-align: center; }
+.text-left   { text-align: left; }
+.text-right  { text-align: right; }

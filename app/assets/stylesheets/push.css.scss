@@ -1,0 +1,28 @@
+
+$pushHeight: 180px;
+
+
+
+body {height: 100%;}
+
+.gutter {
+  margin: 0 $gutter-width;
+
+  &.left { margin-right: 20px;}
+  &.right { margin-left: 20px;}
+}
+
+.push {
+  height: $pushHeight;
+}
+
+.footer {
+  height: $pushHeight;
+}
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0;
+  margin-bottom: $pushHeight*-1;
+}

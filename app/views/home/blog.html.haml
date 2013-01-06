@@ -1,0 +1,8 @@
+.row
+  .offset2.span8
+    - @feed.each do |feed_item|
+      = raw display_entry feed_item.entry
+
+    .text-right.dark= will_paginate @feed
+
+= render 'layouts/media_modal'

@@ -1,0 +1,7 @@
+// Fix for bootsrap 2.1.1.0 variable for highlight not being set correctly
+
+.pagination ul > li > a:hover,
+.pagination ul > .active > a,
+.pagination ul > .active > span {
+  background-color: $gray;
+}

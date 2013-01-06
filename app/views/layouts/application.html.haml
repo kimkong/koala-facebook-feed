@@ -1,0 +1,22 @@
+!!! XML
+!!!
+
+%html
+  %head
+    %title
+      Koala Facebook Feed sample
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tag unless response.cache_control[:public]
+    = render :partial=>'/layouts/head'
+
+
+  %body
+    .container
+      = render partial:'/layouts/header'
+      = render partial:'/layouts/nav'
+    .container
+      =yield
+
+      .row#footer.margin-top
+        = render :partial=>'/layouts/footer'

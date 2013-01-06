@@ -1,0 +1,31 @@
+.modal#mediaModal.hide
+  .modal-header
+    = link_to "x", "", class:"close", :"data-dismiss"=>"modal"
+    %h3#modalHeader Modal header
+
+  .modal-body
+    %iframe{id:"mediaplayer", width:"100%", height:"480px", src:"", scrolling:"auto", frameborder:0 }
+  .modal-footer
+    = link_to "close", "#", class:"btn btn-inverse close", :"data-dismiss"=>"modal"
+
+
+
+:javascript
+  $(function() {
+
+    $('#mediaModal').modal({
+      show:false,
+      backdrop:true
+    });
+
+    $('a.video').click( function(){
+      $('iframe#mediaplayer').attr("src",$(this).data('embed'));
+      $('#modalHeader').html($(this).data('title'))
+    });
+
+    $('#mediaModal a.close, .modal-backdrop in').click(function(){
+      $('iframe#mediaplayer').attr("src","");
+    });
+
+  });
+

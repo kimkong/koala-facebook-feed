@@ -1,0 +1,56 @@
+
+#mediaModal {
+  background:$black;
+  left:10%;
+  width:80%;
+  margin:0;
+  top:10%;
+  .modal-header {background:$grayDarker; color:$grayLight;  border:0;}
+  .modal-header > a.close { color:$grayLight; }
+  .modal-body   {max-height:640px;padding:0; background:$black; border:0;}
+  .modal-footer {background:$grayDarker; border:0; box-shadow:none;}
+}
+
+
+.actionbox{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+
+  h3, p {
+    line-height: 35px;
+    margin: 10px 0 20px 0;
+    a:hover { text-decoration: none;}
+  }
+
+  a.video {
+    .thumbnail {
+      background:$black;
+      border: 1px solid $grayDark;
+      position: relative;
+      padding: 0;
+
+      i { background: none; font-size: 2em; position: absolute; left: 48%; top: 48%; }
+    }
+  }
+}
+
+
+.embed-video {
+  background: url('');
+  border: 1px solid $grayDark;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.embed-video iframe,
+.embed-video object,
+.embed-video embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

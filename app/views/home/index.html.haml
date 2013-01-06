@@ -1,0 +1,25 @@
+.row
+  .span6
+    %h1 The problem
+    %p Re-display a Facebook Page wall feed on an external website.  There are 3 methods of doing this.
+    %ol
+      %li Javascript only using either Facebook supplied or third party widgets to query fb and pull dow
+      %li Use exisiting rss feed mechanisms supplied by Facebook, rss or atom
+      %li Use
+  .span6
+    %h1 What is this?
+    %p By using Koala, and using a cronjob to
+
+.row.margin-top
+  .offset2.span6
+    %h1
+      = link_to "reload feed", "/update_feed", class:'btn pull-right'
+      Facebook Wall Updates
+
+    - @feed.each do |feed_item|
+      = raw display_entry feed_item.entry
+    %br
+    %br
+    .text-right=# link_to "more updates", "/blog", class:'btn'
+
+= render 'layouts/media_modal'
